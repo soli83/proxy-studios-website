@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  min-width: 360px;
+  min-width: 320px;
 }
 
 a {
@@ -127,31 +127,31 @@ header {
     width: 40%;
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
 
     .spash-info {
-      position: absolute;
       background-color: $beta50;
-      left: 2%;
-      right: 2%;
-      top: 2%;
-      bottom: 2%;
       z-index: 2;
       backdrop-filter: blur(10px);
+      margin: 20px;
       transition: 0.4s;
       opacity: 0;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      gap: 30px;
-      
-      .zephon-logo{
-         margin-top: 40px;
+      gap: 20px;
+
+      .zephon-logo {
+        margin-top: 60px;
       }
 
       p {
         text-align: center;
-        padding: 0 20%;
+        padding: 0 10%;
+        margin-bottom: 0;
       }
 
       a {
@@ -163,7 +163,7 @@ header {
         font-size: 20px;
         font-weight: 400;
         transition: 0.4s;
-        height: 90px;
+        height: 110px;
 
         &:hover {
           gap: 30px;
@@ -192,7 +192,6 @@ header {
 
       .splash {
         filter: grayscale(0%);
-        transform: scale(1.1);
       }
     }
   }
@@ -321,8 +320,8 @@ h2 {
 .timeline-item {
   display: flex;
   padding-bottom: 60px;
-  
-  &:last-child{
+
+  &:last-child {
     padding-bottom: 0;
   }
 
@@ -419,11 +418,11 @@ h2 {
   color: $alpha;
   font-weight: 600;
   padding-bottom: 20px;
-  
-  a{
+
+  a {
     color: $primary;
-    
-    &:hover{
+
+    &:hover {
       color: $alpha;
     }
   }
@@ -556,7 +555,6 @@ footer {
 
     .top-right {
       width: 100%;
-      height: 500px;
     }
   }
 
@@ -571,6 +569,10 @@ footer {
 
   .top .top-right .spash-info {
     opacity: 1;
+
+    p {
+      max-width: 600px;
+    }
   }
 
   .top .top-right .splash {
@@ -579,7 +581,7 @@ footer {
 }
 
 @media only screen and (max-width: 650px) {
-  .impressum-container {
+  .imprint-container {
     flex-direction: column;
   }
 
@@ -589,8 +591,8 @@ footer {
     left: 0;
     justify-content: center;
   }
-  
-  .timeline-item .right a svg{
+
+  .timeline-item .right a svg {
     display: none;
   }
 }
@@ -599,29 +601,30 @@ footer {
   footer {
     font-size: 10px;
   }
-  
-  .top .top-right .spash-info p{
+
+  .top .top-right .spash-info p {
     padding: 0 10%;
     margin: 10px 0 0 0;
   }
-  
-  .mid, .bottom{
+
+  .mid,
+  .bottom {
     padding: 60px 0;
   }
-  
-  .imprint{
+
+  .imprint {
     padding: 60px 0 130px 0;
   }
-  
-  .timeline-item .left{
+
+  .timeline-item .left {
     padding-right: 20px;
   }
-  
-  .top .top-right .spash-info{
+
+  .top .top-right .spash-info {
     gap: 20px;
   }
-  
-  .top .top-right .spash-info .zephon-logo{
+
+  .top .top-right .spash-info .zephon-logo {
     width: 210px;
     margin-top: 30px;
   }
