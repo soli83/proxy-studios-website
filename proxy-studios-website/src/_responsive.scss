@@ -1,0 +1,135 @@
+@media only screen and (max-width: 1100px) {
+    header {
+      padding-top: 20px;
+      .header-center .header-spacer {
+        align-items: flex-start;
+        padding: 0 20px 0 20px;
+  
+        .social {
+          gap: 20px;
+          padding-right: 0;
+          padding-top: 5px;
+        }
+  
+        .links {
+          align-items: flex-start;
+          gap: 0px;
+          flex-direction: column;
+          padding: 0 30px 30px 30px;
+          background-color: $beta;
+          border: none;
+          width: 25px;
+          overflow: hidden;
+  
+          &:hover {
+            height: auto;
+            width: auto;
+            padding: 0 30px 15px 30px;
+          }
+  
+          svg {
+            display: block;
+          }
+  
+          a {
+            margin-top: 30px;
+            &:first-child {
+              margin-top: 60px;
+            }
+          }
+        }
+      }
+    }
+  
+    .top {
+      height: auto;
+      flex-direction: column;
+  
+      .top-left {
+        width: 100%;
+        padding: 60px 30px 100px 30px;
+        box-sizing: border-box;
+        justify-content: center;
+  
+        .cta {
+          padding-left: 0;
+        }
+      }
+  
+      .top-right {
+        width: 100%;
+      }
+    }
+  
+    .timeline-item .left {
+      width: 60px;
+    }
+  
+    .press-container {
+      flex-direction: column;
+      gap: 50px;
+    }
+  
+    .top .top-right .spash-info {
+      opacity: 1;
+  
+      p {
+        max-width: 600px;
+      }
+    }
+  
+    .top .top-right .splash {
+      transform: scale(1.1);
+    }
+  }
+  
+  @media only screen and (max-width: 650px) {
+    .imprint-container {
+      flex-direction: column;
+    }
+  
+    .icon-link {
+      bottom: -88px;
+      top: initial;
+      left: 0;
+      justify-content: center;
+    }
+  
+    .timeline-item .right a svg {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 450px) {
+    footer {
+      font-size: 10px;
+    }
+  
+    .top .top-right .spash-info p {
+      padding: 0 10%;
+      margin: 10px 0 0 0;
+    }
+  
+    .mid,
+    .bottom {
+      padding: 60px 0;
+    }
+  
+    .imprint {
+      padding: 60px 0 130px 0;
+    }
+  
+    .timeline-item .left {
+      padding-right: 20px;
+    }
+  
+    .top .top-right .spash-info {
+      gap: 20px;
+    }
+  
+    .top .top-right .spash-info .zephon-logo {
+      width: 210px;
+      margin-top: 30px;
+    }
+  }
+  

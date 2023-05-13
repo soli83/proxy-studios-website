@@ -1,0 +1,17 @@
+footer {
+    width: 100%;
+    background-color: $alpha;
+    padding: 10px 30px;
+    color: $beta;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    svg {
+      margin: -3px 7px 0 0;
+    }
+  }

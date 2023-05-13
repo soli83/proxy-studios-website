@@ -1,0 +1,44 @@
+.bottom {
+    padding: 130px 0;
+    .center {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 30px;
+      position: relative;
+    }
+  }
+  
+  .press-container,
+  .imprint-container {
+    display: flex;
+    color: $alpha75;
+    gap: 15%;
+  
+    .left {
+      flex: 1;
+      max-width: 475px;
+  
+      p {
+        margin-bottom: 50px;
+      }
+  
+      svg {
+        fill: transparent;
+        stroke: $primary;
+      }
+    }
+  
+    .right {
+      flex: 1;
+      max-width: 475px;
+    }
+  }
+  
+  .imprint-container {
+    .left,
+    .right {
+      max-width: 400px;
+      min-width: 250px;
+      flex: none;
+    }
+  }
