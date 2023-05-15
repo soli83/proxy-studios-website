@@ -1,17 +1,13 @@
 @import "./variables.scss";
-@import "./header.scss";
-@import "./top.scss";
-@import "./mid.scss";
-@import "./bottom.scss";
-@import "./footer.scss";
 
 html {
   background-color: $beta;
   font-family: "Epilogue", sans-serif;
   color: $alpha;
-  line-height: 200%;
+  line-height: 201%;
   font-weight: 300;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -171,5 +167,9 @@ h2 {
 ::-webkit-scrollbar-thumb:hover {
   background: $primary;
 }
-
+@import "./header.scss";
+@import "./top.scss";
+@import "./mid.scss";
+@import "./bottom.scss";
+@import "./footer.scss";
 @import "./responsive.scss";
