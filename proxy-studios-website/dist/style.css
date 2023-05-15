@@ -98,6 +98,7 @@ h2 span {
 }
 .value a {
   color: #f2c94c;
+  transition: 0.4s;
 }
 .value a:hover {
   color: #ffffff;
@@ -196,6 +197,9 @@ header .header-center .header-spacer .links svg {
   position: absolute;
   left: 0;
   display: none;
+}
+header .header-center .header-spacer .links a {
+  transition: 0.4s;
 }
 header .header-center .header-spacer .links a:hover {
   color: #f2c94c;

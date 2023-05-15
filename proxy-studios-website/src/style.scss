@@ -112,6 +112,7 @@ h2 {
 
   a {
     color: $primary;
+    transition: 0.4s;
 
     &:hover {
       color: $alpha;
